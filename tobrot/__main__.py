@@ -54,19 +54,19 @@ if __name__ == "__main__" :
     #
     incoming_message_handler = MessageHandler(
         incoming_message_f,
-        filters=Filters.command(["leech"]) & Filters.chat(chats=AUTH_CHANNEL)
+        filters=Filters.command(["leech@theupload3_bot"]) & Filters.chat(chats=AUTH_CHANNEL)
     )
     app.add_handler(incoming_message_handler)
     #
     incoming_purge_message_handler = MessageHandler(
         incoming_purge_message_f,
-        filters=Filters.command(["purge"]) & Filters.chat(chats=AUTH_CHANNEL)
+        filters=Filters.command(["purge@theupload3_bot"]) & Filters.chat(chats=AUTH_CHANNEL)
     )
     app.add_handler(incoming_purge_message_handler)
     #
     incoming_youtube_dl_handler = MessageHandler(
         incoming_youtube_dl_f,
-        filters=Filters.command(["ytdl"]) & Filters.chat(chats=AUTH_CHANNEL)
+        filters=Filters.command(["ytdl@theupload3_bot"]) & Filters.chat(chats=AUTH_CHANNEL)
     )
     app.add_handler(incoming_youtube_dl_handler)
     #
